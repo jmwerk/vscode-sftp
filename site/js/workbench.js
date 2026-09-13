@@ -796,7 +796,7 @@
   function closeMenus() {
     contextMenu.hidden = true;
     backdrop.hidden = true;
-    $$('.menubar-item.open').forEach((b) => b.classList.remove('open'));
+    $$('[data-menu].open').forEach((b) => b.classList.remove('open'));
   }
   function openMenu(items, pos, anchorBtn) {
     contextMenu.innerHTML = '';
